@@ -1,0 +1,1 @@
+This Extension adds Business Intelligence capabilities to Calc by allowing access to the Palo MOLAP Server.

@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="Addons" oor:package="org.openoffice.Office">
+  <node oor:name="AddonUI">
+    <node oor:name="OfficeMenuBar">
+      <node oor:name="org.palooca.PalOOCaUI" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en">~Olap</value>
+          <value xml:lang="de">~Olap</value>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <prop oor:name="ImageIdentifier" oor:type="xs:string">
+          <value/>
+        </prop>
+        <node oor:name="Submenu">
+          <node oor:name="m001" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:CreateView</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">Insert ~View...</value>
+              <value xml:lang="de">~Ansicht einfügen...</value>
+            </prop>
+          </node>
+          <node oor:name="m002" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>private:separator</value>
+            </prop>
+          </node>
+          <node oor:name="m003" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:InsertElements</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">~Insert Elements...</value>
+              <value xml:lang="de">Elemente ~einfügen...</value>
+            </prop>
+          </node>
+          <!--node oor:name="m004" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:InsertSubset</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">~Insert Subset...</value>
+              <value xml:lang="de">Subset ~einfügen...</value>
+            </prop>
+          </node -->
+          <node oor:name="m005" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:InsertData</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">Insert ~Function...</value>
+              <value xml:lang="de">~Funktion einfügen...</value>
+            </prop>
+          </node>
+          <node oor:name="m006" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>private:separator</value>
+            </prop>
+          </node>
+          <node oor:name="m007" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:ShowModeler</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">~Modeler...</value>
+              <value xml:lang="de">~Modeller...</value>
+            </prop>
+          </node>
+          <!--
+          <node oor:name="m008" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">Import ~Data</value>
+              <value xml:lang="de">~Datenimport</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="ImageIdentifier" oor:type="xs:string">
+              <value/>
+            </prop>
+            <node oor:name="Submenu">
+              <node oor:name="m008-001" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                  <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>org.palooca:ImportFunctions</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en">Execute import ~functions</value>
+                  <value xml:lang="de">Import~funktionen ausführen</value>
+                </prop>
+              </node>
+           
+              <node oor:name="m008-002" oor:op="replace">
+                <prop oor:name="Context" oor:type="xs:string">
+                  <value>com.sun.star.sheet.SpreadsheetDocument</value>
+                </prop>
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>org.palooca:ExternalDataSource</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en">From ~File...</value>
+                  <value xml:lang="de">Aus ~Datei...</value>
+                </prop>
+              </node>
+            </node>
+          </node>
+          -->
+          <node oor:name="m009" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>private:separator</value>
+            </prop>
+          </node>
+          <node oor:name="m010" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:CreateSnapshot</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">Create ~Snapshot...</value>
+              <value xml:lang="de">~Snapshot erstellen...</value>
+            </prop>
+          </node>
+          <node oor:name="m011" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>private:separator</value>
+            </prop>
+          </node>
+          <node oor:name="m013" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>private:separator</value>
+            </prop>
+          </node>
+          <node oor:name="m014" oor:op="replace">
+            <prop oor:name="Context" oor:type="xs:string">
+              <value>com.sun.star.sheet.SpreadsheetDocument</value>
+            </prop>
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>org.palooca:ShowAbout</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en">About...</value>
+              <value xml:lang="de">Info...</value>
+            </prop>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node oor:name="Images">
+        <node oor:name="org.palooca.menu.createview.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:CreateView</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/InsertView.PNG</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="org.palooca.menu.insertelements.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:InsertElements</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/InsertElements.PNG</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="org.palooca.menu.insertdata.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:InsertData</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/InsertFunction.PNG</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="org.palooca.menu.modeler.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:ShowModeler</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/modeler.png</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="org.palooca.menu.snapshot.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:CreateSnapshot</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/SaveSnapshot.PNG</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="org.palooca.menu.wikipalo.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:WikiPalo</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/Wikipalo.PNG</value>
+                </prop>
+            </node>
+        </node>
+        <node oor:name="org.palooca.menu.about.images" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+                <value>org.palooca:ShowAbout</value>
+            </prop>
+            <node oor:name="UserDefinedImages">
+                <prop oor:name="ImageSmallURL" oor:type="xs:string">
+                    <value>%origin%/images/palo.png</value>
+                </prop>
+            </node>
+        </node>
+    </node>
+  </node>
+</oor:component-data>

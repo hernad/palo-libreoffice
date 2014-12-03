@@ -1,0 +1,128 @@
+/*
+ * XPalOOCa.idl
+ *
+ * Palo Open Office Calc AddIn
+
+ * Interface description for PALO OpenOffice Calc AddIn
+ * Copyright (C) 2008 PalOOCa Team,  Tensegrity Software GmbH, 2009
+
+ * The software is licensed under an Open-Source License (GPL).
+ * If you want to redistribute the software you must observe the regulations of
+ * the GPL . If you want to redistribute the software without the
+ * restrictions of the GPL, you have to contact Tensegrity Software GmbH
+ * (Tensegrity) for written consent to do so.
+ * Tensegrity may offer commercial licenses for redistribution (Dual Licensing)
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ *
+ * Created on 13.03.2007 - 10:42:19
+ */
+
+#ifndef _org_palooca_XPalOOCa_
+#define _org_palooca_XPalOOCa_
+
+#include <com/sun/star/lang/XLocalizable.idl>
+
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/sheet/XVolatileResult.idl>
+
+
+module org { module palooca {
+    interface XPalOOCa {
+        /// used to set an add-in locale for formatting reasons for example
+        [optional] interface ::com::sun::star::lang::XLocalizable;
+
+        any PALO_DATA([in] string servdb, [in] string cube,
+                      [in] sequence< any > coordinate);
+
+        any PALO_DATAC([in] string servdb, [in] string cube,
+                       [in] sequence< any > coordinate);
+
+        any PALO_DATAV([in] string servdb, [in] string cube,
+                       [in] sequence< any > coordinate);
+
+        any PALO_DATAT([in] string servdb, [in] string cube,
+                       [in] sequence< any > coordinate);
+
+        string PALO_ENAME([in] string servdb, [in] string dimension, 
+                [in] any aindex, [in] any afig,
+                [in] any apath, [in] any alias);
+
+        string PALO_EFIRST([in] string servdb, [in] string dimension);
+
+        string PALO_ENEXT([in] string servdb, [in] string dimension, 
+                          [in] string element);
+
+        string PALO_EPREV([in] string servdb, [in] string dimension, 
+                          [in] string element);
+
+        string PALO_ECHILD([in] string servdb, [in] string dimension, 
+                           [in] string element, [in] long childID);
+
+        string PALO_EPARENT([in] string servdb, [in] string dimension, 
+                            [in] string element, [in] long parentNum);
+
+        string PALO_ESIBLING([in] string servdb, [in] string dimension, 
+                             [in] string element, [in] long siblingNum,
+                             [in] any alias);
+
+        any PALO_EINDEX([in] string servdb, [in] string dimension, 
+                        [in] string element);
+
+        any PALO_ECOUNT([in] string servdb, [in] string dimension);
+
+        any PALO_ECHILDCOUNT([in] string servdb, [in] string dimension, 
+                             [in] string element);
+
+        any PALO_EPARENTCOUNT([in] string servdb, [in] string dimension, 
+                              [in] string element);
+
+        any PALO_EINDENT([in] string servdb, [in] string dimension, 
+                         [in] string element);
+
+        any PALO_EISCHILD([in] string servdb, [in] string dimension, 
+                          [in] string parentElement, [in] string element);
+
+        any PALO_ELEVEL([in] string servdb, [in] string dimension, 
+                        [in] string element);
+
+        string PALO_ETYPE([in] string servdb, [in] string dimension, 
+                          [in] string element);
+
+        any PALO_EWEIGHT([in] string servdb, [in] string dimension, 
+                         [in] string parent, [in] string child);
+
+        any PALO_ETOPLEVEL([in] string servdb, [in] string dimension);
+
+        //Matrix functions
+        sequence< sequence< string > > PALO_DATABASE_LIST_DIMENSIONS([in] string servdb);
+        sequence< sequence< string > > PALO_CUBE_LIST_DIMENSIONS([in] string servdb, [in] string cube);
+        sequence< sequence< string > > PALO_DIMENSION_LIST_CUBES([in] string servdb, [in] string dimension);
+        sequence< sequence< string > > PALO_DIMENSION_LIST_ELEMENTS([in] string servdb, [in] string dimension);
+        sequence< sequence< string > > PALO_ELEMENT_LIST_CONSOLIDATION_ELEMENTS([in] string servdb, [in] string dimension, [in] string element);
+
+        //Import functions
+        any PALO_SETDATA([in] any value, [in] any splash, [in] string servdb,
+                         [in] string cube, [in] sequence< any > coordinate);
+        any PALO_EADD([in] string servdb, [in] string dimension, [in] string elementType,
+                      [in] string element, [in] any parent, [in] any weight, [in] any clear);
+        any PALO_EDELETE([in] string servdb, [in] string dimension, [in] string element);
+        any PALO_ERENAME([in] string servdb, [in] string dimension, [in] string element,
+                         [in] string newName);
+        any PALO_CLEARDIMENSION([in] string servdb, [in] string dimension);
+
+        //Error functions
+        any PALO_ERROR_LOG ([in] string error, [in] string path, [in] string value,
+                            [in] any cube, [in] sequence< any > coordinate);
+
+    };
+}; };
+
+#endif

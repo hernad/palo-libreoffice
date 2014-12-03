@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description xmlns="http://openoffice.org/extensions/description/2006" xmlns:dep="http://openoffice.org/extensions/description/2006" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <version value="5.2.0"/>
+    <identifier value="PaloForOpenOffice"/>
+    <!--dependencies>
+        <OpenOffice.org-minimal-version value=3.0" dep:name="You need at least OpenOffice.org version 3.0"/>
+    </dependencies-->
+    <display-name>
+        <name lang="en">Palo for OpenOffice</name>
+    </display-name>
+    <publisher>
+        <name lang="en" xlink:href="http://www.proclos.com">Proclos</name>
+    </publisher>
+    <extension-description>
+        <src lang="de" xlink:href="description/packagedescription.txt"/>
+        <src lang="en" xlink:href="description/packagedescription.txt"/>
+    </extension-description>
+    <update-information>
+        <src xlink:href="http://ursula.proclos.com/paloo/palooca.update.xml"/>
+    </update-information>
+</description>
+<!--Created with OpenOffice.org API plug-in for NetBeans Version 2.0.6-->
+<!--Created with Apache OpenOffice API plug-in for NetBeans Version 2.0.6.000205-->

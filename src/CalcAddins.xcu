@@ -1,0 +1,1641 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<oor:component-data xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" oor:name="CalcAddIns" oor:package="org.openoffice.Office">
+    <node oor:name="AddInInfo">
+        <node oor:name="org.palooca.PalOOCa" oor:op="replace">
+            <node oor:name="AddInFunctions">
+                
+                <node oor:name="PALO_DATA" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DATA</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a value from a Palo database.</value>
+                        <value xml:lang="de">Ruft einen Wert aus einer Palo Datenbank ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DATA</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">cube</value>
+                                <value xml:lang="de">Würfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired cube.</value>
+                                <value xml:lang="de">Name des gewünschten Würfels.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="coordinate" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">coordinate</value>
+                                <value xml:lang="de">Koordinate</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The coordinate of the desired value.</value>
+                                <value xml:lang="de">Die Koordinate des gewünschten Wertes.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_DATAC" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DATAC</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a value from a Palo database.</value>
+                        <value xml:lang="de">Ruft einen Wert aus einer Palo Datenbank ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DATAC</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">cube</value>
+                                <value xml:lang="de">Würfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired cube.</value>
+                                <value xml:lang="de">Name des gewünschten Würfels.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="coordinate" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">coordinate</value>
+                                <value xml:lang="de">Koordinate</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The coordinate of the desired value.</value>
+                                <value xml:lang="de">Die Koordinate des gewünschten Wertes.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_DATAV" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DATAV</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a value from a Palo database.</value>
+                        <value xml:lang="de">Ruft einen Wert aus einer Palo Datenbank ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DATAV</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">cube</value>
+                                <value xml:lang="de">Würfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired cube.</value>
+                                <value xml:lang="de">Name des gewünschten Würfels.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="coordinate" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">coordinate</value>
+                                <value xml:lang="de">Koordinate</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The coordinate of the desired value.</value>
+                                <value xml:lang="de">Die Koordinate des gewünschten Wertes.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_DATAT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DATAT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a value from a Palo database.</value>
+                        <value xml:lang="de">Ruft einen Wert aus einer Palo Datenbank ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DATAT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">cube</value>
+                                <value xml:lang="de">Würfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired cube.</value>
+                                <value xml:lang="de">Name des gewünschten Würfels.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="coordinate" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">coordinate</value>
+                                <value xml:lang="de">Koordinate</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The coordinate of the desired value.</value>
+                                <value xml:lang="de">Die Koordinate des gewünschten Wertes.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ENAME" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ENAME</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns of the name of the element at the given index.</value>
+                        <value xml:lang="de">Gibt den Namen des Elements an gegebener Position zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ENAME</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="aindex" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">index</value>
+                                <value xml:lang="de">Index</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The index of the element.</value>
+                                <value xml:lang="de">Der Index des Elements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="afig" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">afig</value>
+                                <value xml:lang="de">afig</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">not used</value>
+                                <value xml:lang="de">not used</value>
+                            </prop>
+                        </node>
+                        <node oor:name="apath" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">apath</value>
+                                <value xml:lang="de">apath</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">not used</value>
+                                <value xml:lang="de">not used</value>
+                            </prop>
+                        </node>
+                        <node oor:name="alias" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">alias</value>
+                                <value xml:lang="de">alias</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The alias field used for showing the element name.</value>
+                                <value xml:lang="de">Das Aliasfeld zum Anzeigen des Elementnamen.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_EFIRST" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EFIRST</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the name of the first element in the dimension.</value>
+                        <value xml:lang="de">Gibt den Namen des ersten Elements der Dimension zurueck.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EFIRST</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_ENEXT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ENEXT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the name of the following element.</value>
+                        <value xml:lang="de">Gibt den Namen des Folgeelements zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ENEXT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the preceding element.</value>
+                                <value xml:lang="de">Der Name des Vorgängerelements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_EPREV" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EPREV</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the name of the preceding element.</value>
+                        <value xml:lang="de">Gibt den Namen des Vorgängerelements zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EPREV</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the following element.</value>
+                                <value xml:lang="de">Der Name des Folgeelements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_ECHILD" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ECHILD</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves the specified child element at the given index.</value>
+                        <value xml:lang="de">Ruft das Kindelement an der angegebenen Position ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ECHILD</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Element which child shall be queried.</value>
+                                <value xml:lang="de">Element dessen Kind abgerufen werden soll.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="childID" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">ChildIndex</value>
+                                <value xml:lang="de">ChildIndex</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Index of the desired child.</value>
+                                <value xml:lang="de">Index des gewünschten Kindes.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_EPARENT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EPARENT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves the parent of the named element with the given index.</value>
+                        <value xml:lang="de">Ruft das Elternelement des gegebenen Elements an dem gegebenen Index ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EPARENT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Element which parent shall be queried.</value>
+                                <value xml:lang="de">Element dessen Vater abgerufen werden soll.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="parentNum" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">ParentIndex</value>
+                                <value xml:lang="de">ParentIndex</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Index of the parent element.</value>
+                                <value xml:lang="de">Index des Vaterelements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ESIBLING" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ESIBLING</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the name of the sibling at the given offset of the element.</value>
+                        <value xml:lang="de">Gibt den Namen des bestimmten Vorgängers bzw. Nachfolgers des gegebenen Elements.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ESIBLING</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Element which sibling shall be queried.</value>
+                                <value xml:lang="de">Element dessen Vorgänger oder Nachfolger abgerufen werden soll.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="siblingNum" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">offset</value>
+                                <value xml:lang="de">Offset</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Offset of the sibling.</value>
+                                <value xml:lang="de">Offset des Vorgängers bzw. Nachfolgers.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="alias" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">alias</value>
+                                <value xml:lang="de">alias</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The alias field used for showing the element name.</value>
+                                <value xml:lang="de">Das Aliasfeld zum Anzeigen des Elementnamen.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_EINDEX" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EINDEX</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the index of the given element within the given dimension.</value>
+                        <value xml:lang="de">Gibt den Index des gegebenen Elements der gegebenen Dimension zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EINDEX</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ECOUNT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ECOUNT</value>
+                        <value xml:lang="de">PALO.ECOUNT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the count of elements within the given dimension.</value>
+                        <value xml:lang="de">Gibt die Anzahl an Elementen einer Dimension zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ECOUNT</value>
+                        <value xml:lang="de">PALO.ECOUNT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ECHILDCOUNT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ECHILDCOUNT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the number of children a given element has.</value>
+                        <value xml:lang="de">Gibt die Anzahl an Kindern eines gegebenen Elements zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ECHILDCOUNT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_EPARENTCOUNT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EPARENTCOUNT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the number of parents a given element has.</value>
+                        <value xml:lang="de">Gibt die Anzahl an Vätern zurück, die ein gegebenes Element hat.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EPARENTCOUNT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_EINDENT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EINDENT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">TODO</value>
+                        <value xml:lang="de">TODO</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EINDENT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_EISCHILD" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EISCHILD</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns 1 if the element is a child of the given parent and 0 (zero) if not.</value>
+                        <value xml:lang="de">Gibt 1 zurück, wenn das Element ein Kind des gegebenen Vaters ist und 0 (Null), falls nicht.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EISCHILD</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="parentElement" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">parent</value>
+                                <value xml:lang="de">Vater</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the parent element.</value>
+                                <value xml:lang="de">Name des Vaterelements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_ELEVEL" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ELEVEL</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the level of a given element within the dimension.</value>
+                        <value xml:lang="de">Gibt die Anzahl der Hierarchiestufen unterhalb eines Elements einer Dimension zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ELEVEL</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ETYPE" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ETYPE</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the type of the given element.</value>
+                        <value xml:lang="de">Gibt den Typ des gegebenen Elements zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ETYPE</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired element.</value>
+                                <value xml:lang="de">Name des gewünschten Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_EWEIGHT" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EWEIGHT</value>
+                        <value xml:lang="de">PALO.EWEIGHT</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the weight of a consolidation.</value>
+                        <value xml:lang="de">Gibt die Gewichtung einer Konsolidierung zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EWEIGHT</value>
+                        <value xml:lang="de">PALO.EWEIGHT</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="parent" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">parent</value>
+                                <value xml:lang="de">Vater</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the parent element.</value>
+                                <value xml:lang="de">Name des Vaterelements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="child" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">child</value>
+                                <value xml:lang="de">Kind</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the child element.</value>
+                                <value xml:lang="de">Name des Kindelements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ETOPLEVEL" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ETOPLEVEL</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Returns the maximum level of a dimension.</value>
+                        <value xml:lang="de">Gibt das maximale Level der Dimension zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ETOPLEVEL</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired dimension.</value>
+                                <value xml:lang="de">Name der gewünschten Dimension.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_DATABASE_LIST_DIMENSIONS" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DATABASE_LIST_DIMENSIONS</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a list of dimensions for a given database.</value>
+                        <value xml:lang="de">Ruft die Liste der Dimensionen einer Datenbank ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DATABASE_LIST_DIMENSIONS</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_CUBE_LIST_DIMENSIONS" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.CUBE_LIST_DIMENSIONS</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a list of dimensions for a given cube.</value>
+                        <value xml:lang="de">Ruft die Liste der Dimensionen eines Würfels ab.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.CUBE_LIST_DIMENSIONS</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">cube</value>
+                                <value xml:lang="de">Würfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired cube.</value>
+                                <value xml:lang="de">Name des gewünschten Würfels.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_DIMENSION_LIST_CUBES" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DIMENSION_LIST_CUBES</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a list of cubes which contain the given dimension.</value>
+                        <value xml:lang="de">Ruft die Liste der Würfel ab, welche die angegebene Dimension enthalten.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DIMENSION_LIST_CUBES</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_DIMENSION_LIST_ELEMENTS" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.DIMENSION_LIST_ELEMENTS</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves the list of elements which belong to the given dimension.</value>
+                        <value xml:lang="de">Ruft die Liste der Elemente ab, welche zu der gegebenen Dimension gehören.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.DIMENSION_LIST_ELEMENTS</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ELEMENT_LIST_CONSOLIDATION_ELEMENTS" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ELEMENT_LIST_CONSOLIDATION_ELEMENTS</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Retrieves a list of consolidation elements for a given element within a given dimension.</value>
+                        <value xml:lang="de">Gibt eine Liste mit Konsolidierungselementen zu einem gegebenen Element einer gegebenen Funktion zurück.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ELEMENT_LIST_CONSOLIDATION_ELEMENTS</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the element.</value>
+                                <value xml:lang="de">Der Name des Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_SETDATA" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.SETDATA</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Writes a value to a Palo cube.</value>
+                        <value xml:lang="de">Schreibt einen Wert in einen Palo Würfel.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.SETDATA</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="value" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Value</value>
+                                <value xml:lang="de">Wert</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The value to be written to the cube.</value>
+                                <value xml:lang="de">Der Wert, welcher in den Würfel geschrieben werden soll.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="splash" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Splash</value>
+                                <value xml:lang="de">Splash</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Set splash to 1 if the value is to be written to a consolidated element, 0 otherwise.</value>
+                                <value xml:lang="de">Splash muss den Wert 1 haben, wenn in ein konsolidertes Element geschrieben werden soll, ansonsten 0.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">cube</value>
+                                <value xml:lang="de">Würfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the desired cube.</value>
+                                <value xml:lang="de">Name des gewünschten Würfels.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="coordinate" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">coordinate</value>
+                                <value xml:lang="de">Koordinate</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The coordinate of the desired value.</value>
+                                <value xml:lang="de">Die Koordinate des gewünschten Wertes.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_EADD" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EADD</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Adds an element to a dimension.</value>
+                        <value xml:lang="de">Fügt einer Dimension ein Element hinzu.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EADD</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="elementType" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Type</value>
+                                <value xml:lang="de">Typ</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The type of the element. (numeric, text or consolidated)</value>
+                                <value xml:lang="de">Der Typ des Elements. (numeric, text oder consolidated)</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the element.</value>
+                                <value xml:lang="de">Der Name des Elements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="parent" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Parent</value>
+                                <value xml:lang="de">Vaterelement</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the parent element.</value>
+                                <value xml:lang="de">Der Name des Vaterelements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="weight" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Consolidation Weight</value>
+                                <value xml:lang="de">Konsolidierungsfaktor</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The consolidation weight of the element.</value>
+                                <value xml:lang="de">Der Konsolidierungsfaktor des Elements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="clear" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Clear</value>
+                                <value xml:lang="de">Löschen</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">TRUE deletes the existing elements in the dimension before the import, FALSE adds the new element without clearing any elements before.</value>
+                                <value xml:lang="de">WAHR entfernt vor dem Import alle vorhandenen Elemente der Dimension, FALSCH  f&#252;gt das Element hinzu ohne irgendwelche Elemente vorher zu l&#246;schen.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_EDELETE" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.EDELETE</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Deletes an element from a dimension.</value>
+                        <value xml:lang="de">Löscht ein Element aus einer Dimension.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.EDELETE</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the element.</value>
+                                <value xml:lang="de">Der Name des Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ERENAME" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ERENAME</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Renames an element within a dimension.</value>
+                        <value xml:lang="de">Benennt ein Element einer Dimension um.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ERENAME</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="element" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">element</value>
+                                <value xml:lang="de">Element</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The name of the element.</value>
+                                <value xml:lang="de">Der Name des Elements.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="newName" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">New Name</value>
+                                <value xml:lang="de">Neuer Name</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">The new name of the element.</value>
+                                <value xml:lang="de">Der neue Name des Elements.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+                
+                <node oor:name="PALO_ERROR_LOG" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.ERROR_LOG</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Writes the records, which returns error during the import loop, in an error file.</value>
+                        <value xml:lang="de">Schreibt die Datens&#228;tze einer Importdatei, die w&#228;hrend des Imports Fehler ausl&#246;sen, in eine Fehlerdatei.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.ERROR_LOG</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="error" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Error</value>
+                                <value xml:lang="de">Fehler</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Cell that contains the error, so the cell with the Palo.Setdata function.</value>
+                                <value xml:lang="de">Die Zelle, in der der Fehler entsteht, also die Zelle mit der Palo.Setdata-Funktion.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="path" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Path</value>
+                                <value xml:lang="de">Pfad</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Path and name of the errorfile.</value>
+                                <value xml:lang="de">Pfadangabe und Name der Fehlerdatei.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="value" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Value</value>
+                                <value xml:lang="de">Wert</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Errornous value.</value>
+                                <value xml:lang="de">Fehlerhafter Wert.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="cube" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Cube</value>
+                                <value xml:lang="de">W&#252;rfel</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the cube.</value>
+                                <value xml:lang="de">Name des W&#252;rfels.</value>
+                            </prop>
+                        </node>
+                        <node oor:name="coordinate" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">Coordinate</value>
+                                <value xml:lang="de">Koordinate</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Coordinates in the order as in the cube.</value>
+                                <value xml:lang="de">Koordinaten werden in der gleichen Reihenfolge angegeben, in der die Dimensionen im W&#252;rfel angelegt sind.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+                <node oor:name="PALO_CLEARDIMENSION" oor:op="replace">
+                    <prop oor:name="DisplayName">
+                        <value xml:lang="en">PALO.CLEARDIMENSION</value>
+                    </prop>
+                    <prop oor:name="Description">
+                        <value xml:lang="en">Removes all elements from a dimension.</value>
+                        <value xml:lang="de">Löscht alle Elemente einer Dimension.</value>
+                    </prop>
+                    <prop oor:name="Category">
+                        <value>Add In</value>
+                    </prop>
+                    <prop oor:name="CompatibilityName">
+                        <value xml:lang="en">PALO.CLEARDIMENSION</value>
+                    </prop>
+                    <node oor:name="Parameters">
+                        <node oor:name="servdb" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">connection data</value>
+                                <value xml:lang="de">Verbindungsdaten</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the connection and the database (e.g. "localhost/Demo").</value>
+                                <value xml:lang="de">Name der Verbindung und der Datenbank (z.B. "localhost/Demo").</value>
+                            </prop>
+                        </node>
+                        <node oor:name="dimension" oor:op="replace">
+                            <prop oor:name="DisplayName">
+                                <value xml:lang="en">dimension</value>
+                                <value xml:lang="de">Dimension</value>
+                            </prop>
+                            <prop oor:name="Description">
+                                <value xml:lang="en">Name of the dimension.</value>
+                                <value xml:lang="de">Name der Dimension.</value>
+                            </prop>
+                        </node>
+                    </node>
+                </node>
+
+            </node>
+        </node>
+    </node>
+</oor:component-data>
